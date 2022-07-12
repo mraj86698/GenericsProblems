@@ -1,6 +1,15 @@
 package Generics;
 
-public class Generics<T extends Comparable<T> >{
+public class Generics<T extends Comparable >{
+	T x;
+	T y;
+	T z;
+
+	public Generics(T x, T y, T z) {
+		this.x = x;
+		this.y = y;
+		this.z = z;
+	}
 
 	/**
 	 *

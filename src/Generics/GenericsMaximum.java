@@ -9,9 +9,9 @@ public class GenericsMaximum {
 
 		System.out.println("Finding the Maximum number from given numbers:");
 		System.out.println("Enter 3 numbers: ");
-		Integer x = sc.nextInt();
-		Integer y = sc.nextInt();
-		Integer z = sc.nextInt();
+		Float x = sc.nextFloat();
+		Float y = sc.nextFloat();
+		Float z = sc.nextFloat();
 		Generics findMax=new Generics();
 		System.out.println("Maxmum Number: " + findMax.maximum(x, y, z));
 

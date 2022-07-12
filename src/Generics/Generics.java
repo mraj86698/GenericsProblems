@@ -1,31 +1,28 @@
 package Generics;
 
-public class Generics<T extends Comparable >{
-	T x;
-	T y;
-	T z;
-
-	public Generics(T x, T y, T z) {
-		this.x = x;
-		this.y = y;
-		this.z = z;
-	}
+public class Generics<T extends Comparable> {
 
 	/**
-	 *
-	 * @param x taking first Value
-	 * @param y taking Second Value
-	 * @param z taking Third Value
+	 * @param w taking first value
+	 * @param x taking Second Value
+	 * @param y taking Third Value
+	 * @param z taking Fourth Value
 	 * @return returning the result which is maximum
 	 */
-	public static <T extends Comparable<T>> T printMax(T x,T y,T z) {
+	public static <T extends Comparable<T>> T toPrintMax(T w, T x, T y, T z) {
 
-		T max = x;
-		if (y.compareTo(max) > 0 && y.compareTo(z) > 0)
+		T max = w;
+		if (x.compareTo(max) > 0)
+			max = x;
+		if (y.compareTo(max) > 0)
 			max = y;
-		else if (z.compareTo(max) > 0)
+		if (z.compareTo(max) > 0)
 			max = z;
 		return max;
+	}
+
+	public static <T> void printMax(T w, T x, T y, T z, T max) {
+		System.out.println(max);
 	}
 
 }

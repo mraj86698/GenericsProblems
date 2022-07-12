@@ -7,13 +7,11 @@ public class GenericsMaximum {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Finding the Maximum String from given Strings:");
-		System.out.println("Enter the Three Strings: ");
-		String x = sc.next();
-		String y = sc.next();
-		String z = sc.next();
-		Generics findMax=new Generics();
-		System.out.println("Maximum Number: " + findMax.maximum(x, y, z));
+		System.out.println("Maximum of Integers is "+Generics.printMax(10,20,18));
+		System.out.println("Maximum of Float is " +Generics.printMax(10.7f,20.4f,17.7f));
+		System.out.println("Maximum of Three Strings is" +Generics.printMax("Mango","Banana","Cherry"));
+
+
 
 	}
 
